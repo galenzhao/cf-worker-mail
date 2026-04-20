@@ -16,8 +16,16 @@
 	],
 	"vars": {
 		"FORWARD_TO": "your-verified-destination@example.com",
-		"RECIPIENT_HEADER_NAME": "X-NB-Original-Recipient"
-	}
+		"RECIPIENT_HEADER_NAME": "X-NB-Original-Recipient",
+		"REPLY_DOMAIN": "reply.example.com",
+		"NB_KV_TTL_SECONDS": 2592000
+	},
+	"kv_namespaces": [
+		{
+			"binding": "NB_KV",
+			"id": "REPLACE_WITH_KV_NAMESPACE_ID"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
